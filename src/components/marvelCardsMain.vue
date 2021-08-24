@@ -3,16 +3,18 @@
         <div class="main-container">
             <MarvelCardsHeader />
         </div>
+        <MarvelCardsItem />
     </div>
 </template>
 
 <script>
 import MarvelCardsHeader from '@/components/MarvelCardsHeader.vue'
+import MarvelCardsItem from '@/components/MarvelCardsItem.vue'
 
 export default {
     name: 'marvelCardsMain',
     components: {
-        MarvelCardsHeader
+        MarvelCardsHeader, MarvelCardsItem
     }
 }
 </script>
