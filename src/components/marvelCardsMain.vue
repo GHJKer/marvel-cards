@@ -1,7 +1,8 @@
 <template>
-    <div>
-        <img src="https://www.awn.com/sites/default/files/styles/original/public/image/featured/1046202-sympathy-devil-how-digital-domain-helped-create-thanos-avengers-infinity-war.jpg?itok=aBpL4XP-" alt="">
-        <div class="header-component"><MarvelCardsHeader /></div>
+    <div class="container-container">
+        <div class="main-container">
+            <MarvelCardsHeader />
+        </div>
     </div>
 </template>
 
@@ -17,17 +18,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-    z-index: 0;
-}
-
-.header-component {
-    z-index: 1;
-}
-
-div {
+.main-container {
     width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    min-height: 500px;
+}
+
+.container-container {
+    background: url(https://www.awn.com/sites/default/files/styles/original/public/image/featured/1046202-sympathy-devil-how-digital-domain-helped-create-thanos-avengers-infinity-war.jpg?itok=aBpL4XP-);
 }
 </style>
