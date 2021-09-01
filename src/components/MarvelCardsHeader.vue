@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
 .header {
     padding-top: 20px;
     display: flex;

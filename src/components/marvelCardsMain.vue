@@ -15,6 +15,33 @@ export default {
     name: 'marvelCardsMain',
     components: {
         MarvelCardsHeader, MarvelCardsItem
+    },
+    data() {
+        return {
+            characters: [
+                {
+                name: 'Тони Старк',
+                nickName: 'Железный человек',
+                race: 'Человек',
+                power: 'Деньги, костюм железного человека, интеллект',
+                gender: 'Мужской'
+            },
+            {
+                name: 'Гамора',
+                nickName: 'Гамора',
+                race: 'Зен-Хобери',
+                power: 'Улучшеная физическая сила, мастер боевых искусств, мастер вооружения',
+                gender: 'Женский'
+            },
+            {
+                name: 'Танос',
+                nickName: "Безумный титан",
+                race: 'Вечный',
+                power: 'Сверинтеллект, сверхсила, неуязвимость',
+                gender: 'Мужской'
+            },
+            ]
+        }
     }
 }
 </script>
