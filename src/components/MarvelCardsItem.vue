@@ -1,9 +1,10 @@
 <template>
     <div class="item-card">
-        <img 
-        :src="imgUrl"
-        width="300px"
-        >
+        <div class="img-container">
+            <img class="card-img"
+            :src="imgUrl"
+            >
+        </div>
         <div class="character-info">
             <span>Имя: {{ name }}</span>
             <span>Прозвище: {{ nickName }}</span>
@@ -17,25 +18,33 @@
 <script>
 export default {
     name: 'MarvelCardsItem',
-    data() {
-        return {
-            name: 'Тони Старк',
-            nickName: 'Железный человек',
-            race: 'Человек',
-            power: 'Деньги, костюм железного человека, интеллект',
-            gender: 'Мужской'
-        }
-    }
+    props: ['imgUrl', 'name', 'nickName', 'race', 'power', 'gender'],
+
 }
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 .item-card {
-    width: 300px;
-    min-height: 300px;
+    width: 200px;
     border: 1px solid red;
     color: white;
 }
 
+.character-info {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+
+.img-container {
+    width: 200px;
+    height: 200px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 </style>
