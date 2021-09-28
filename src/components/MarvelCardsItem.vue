@@ -6,10 +6,10 @@
             >
         </div>
         <div class="character-info">
-            <span>Имя: {{ name }}</span>
-            <span>Прозвище: {{ nickName }}</span>
-            <span>Раса: {{ race }}</span>
-            <span>Способности: {{ power }} </span>
+            <span>Имя: {{ name }}</span><br>
+            <span>Прозвище: {{ nickName }}</span><br>
+            <span>Раса: {{ race }}</span><br>
+            <span>Способности: {{ power }} </span><br>
             <span>Пол: {{ gender }}</span>
         </div>
     </div>
